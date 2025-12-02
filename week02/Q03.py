@@ -10,9 +10,7 @@ def error_detect () :
             c += 1
             try :
                 if clean[5] != 'error' and clean[5] != 'notice' :
-
                     with open ('error.log', 'a') as error:
-
                         error.write(f"{c} : {line}")
             except IndexError :
                 with open ('error.log', 'a') as error:
