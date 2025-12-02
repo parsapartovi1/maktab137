@@ -30,4 +30,4 @@ def sum_logs():
     }
 
     with open('summary.json', 'w') as out_file:
-        json.dump(data, out_file, indent=2)t
+        json.dump(data, out_file, indent=2)
