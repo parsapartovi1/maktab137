@@ -1,4 +1,5 @@
-#📚 Maktab 137
+📚 Maktab 137
+---
 
 A complete learning journey from 0 to 100 in Programming
 Python • Linux • Frontend • Backend • Django
