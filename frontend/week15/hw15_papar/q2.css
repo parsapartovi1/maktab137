@@ -1,0 +1,33 @@
+
+    body{
+        font-family: sans-serif;
+        background-color: #fff5e0;
+    }
+    div{
+        margin: 100px 200px;
+        background-color: white;
+        padding: 10px;
+        width: fit-content;
+    }
+    table{
+        padding: 20px 10px;
+        width: 900px;
+        vertical-align: center;
+        background-color: #fff5e0;
+    }
+    .first{
+         width:35%;
+         vertical-align: top;
+        padding-top: 30px;
+    }
+
+    .second{
+        width: 30%;
+        padding-top: 30px;
+    }
+    .third{
+         width: 35%;
+         text-align: left;
+         vertical-align: top;
+         direction: ltr;
+    }

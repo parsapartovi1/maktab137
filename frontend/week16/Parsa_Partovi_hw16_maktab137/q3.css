@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d10000;
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    background-color: #eff6ff;
+    padding: 20px;
+    border-radius: 14px 14px 0 0;
+    margin-bottom: -14px;
+
+}
+
+.container{
+    display: flex;
+    background-color: #eff6ff;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 0 0 14px 14px;
+    border-top: #d3d3d3 solid 2px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.product{
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+button{
+    display: inline;
+    border: none;
+    background: darkred;
+    color: white;
+    width:30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+button:hover{
+    background-color: #ff0000;
+}
+
+.add{
+    border-radius: 0 4px 4px 0;
+}
+
+.sub{
+    border-radius: 4px 0 0 4px;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+
+}
+
+
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.total{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
