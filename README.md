@@ -40,9 +40,9 @@ It represents my growth from beginner level to become a full-stack .
 
 • OOP: Classes, Inheritance, Encapsulation, and Magic Methods.
 
-📁 Floder: /Database
+📁 Floder: /database
 ---
-🔹 Stage 2 — database
+🔹 Stage 2 — DataBase
 
 • Database Design, Tables, Schemas and ERD.
 
@@ -52,9 +52,9 @@ It represents my growth from beginner level to become a full-stack .
 
 • NoSQL: MongoDB Collections
 
-📁 Floder: /Linux , Git and devOps
+📁 Floder: /linux_git_devOps
 ---
-🔹 Stage 3 — linux_git_devOps
+🔹 Stage 3 — Linux , git and DevOps
 
 • Linux Basics: Commands and Bash Scripting.
 
