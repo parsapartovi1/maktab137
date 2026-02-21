@@ -23,8 +23,9 @@ This repository includes:
       >🟢 Django web applications
 
 It represents my growth from beginner level to become a full-stack .
+
+📁 Folder: /python
 ---
-🧠 Learning Path (0 → 100)
 🔹 Stage 1 — Programming Fundamentals
 
 • Variables, Data Types, and Type Casting.
@@ -39,9 +40,9 @@ It represents my growth from beginner level to become a full-stack .
 
 • OOP: Classes, Inheritance, Encapsulation, and Magic Methods.
 
-📁 Folder: /python
+📁 Floder: /Database
 ---
-🔹 Stage 2 — Data Base
+🔹 Stage 2 — database
 
 • Database Design, Tables, Schemas and ERD.
 
@@ -51,9 +52,9 @@ It represents my growth from beginner level to become a full-stack .
 
 • NoSQL: MongoDB Collections
 
-📁 Floder: /Database
+📁 Floder: /Linux , Git and devOps
 ---
-🔹 Stage 3 — Linux , Git and devOps
+🔹 Stage 3 — linux_git_devOps
 
 • Linux Basics: Commands and Bash Scripting.
 
@@ -65,7 +66,7 @@ It represents my growth from beginner level to become a full-stack .
 
 • Cloud Deployment and Hosting Applications.
 
-📁 Folder: /Frontend
+📁 Folder: /frontend
 ---
 🔹 Stage 4 — Frontend Development
 
@@ -78,7 +79,7 @@ It represents my growth from beginner level to become a full-stack .
 • Frontend Frameworks: Brief Introduction to Reac
 
 
-📁Floder: /Backend
+📁Floder: /backend
 ---
 🔹 Stage 5 — Backend Development(django)
 
