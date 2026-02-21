@@ -39,7 +39,7 @@ It represents my growth from beginner level to become a full-stack .
 
 • OOP: Classes, Inheritance, Encapsulation, and Magic Methods.
 
-📁 Folder: /python-basics
+📁 Folder: /python
 ---
 🔹 Stage 2 — Data Base
 
