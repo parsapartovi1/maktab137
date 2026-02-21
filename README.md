@@ -140,9 +140,9 @@ Deploy projects to cloud
 Improve frontend UI/UX
 
 Write better documentation for each project
----
-👨‍💻 Author
 
+👨‍💻 Author
+---
 Parsa Partovi
 
 Aspiring Full Stack Developer
