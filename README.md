@@ -103,16 +103,34 @@ It represents my growth from beginner level to become a full-stack .
 
 
 
-📦 Project Structure Example
+📦 Project Structure 
 ---
 ```
 maktab-137/
 │
 ├── python/
+      ├──week01
+      ├──week02
+      ├──week03
+      ├──week04
+      ├──week05
+      ├──week06
+      ├──week07
+      └──week11
 ├── database/
-├── linux/
+      ├──week12
+      ├──week13
+      └──week14
+├── linux_git_devOps/
+      └──linux
+            ├──week08
+            └──week10
 ├── frontend/
+      ├──week15
+      ├──week16
+      └──week17
 ├── backend/
+      └──week20
 └── README.md
 ```
 
