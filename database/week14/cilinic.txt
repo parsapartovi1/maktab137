@@ -1,0 +1,129 @@
+-- Created by Redgate Data Modeler (https://datamodeler.redgate-platform.com)
+-- Last modification date: 2025-12-18 19:18:19.963
+
+-- tables
+-- Table: Doctor
+CREATE TABLE Doctor (
+    doctor_id serial  NOT NULL,
+    name varchar(50)  NOT NULL,
+    specialty varchar(50)  NOT NULL,
+    CONSTRAINT Doctor_pk PRIMARY KEY (doctor_id)
+);
+
+-- Table: Owner
+CREATE TABLE Owner (
+    Owner_id serial NOT NULL,
+    Name varchar(50)  NOT NULL,
+    phone_number char(11)  NOT NULL DEFAULT 0,
+    treatment_treatment_id int  NOT NULL,
+    CONSTRAINT Owner_pk PRIMARY KEY (Owner_id)
+);
+
+-- Table: Pet
+CREATE TABLE Pet (
+    pet_id serial  NOT NULL,
+    pet_name varchar(50)  NOT NULL,
+    species varchar(50)  NOT NULL,
+    Owner_Owner_id int  NOT NULL,
+    CONSTRAINT owner_id PRIMARY KEY (pet_id)
+);
+
+-- Table: treatment
+CREATE TABLE treatment (
+    treatment_id serial  NOT NULL,
+    treatment_date int  NOT NULL DEFAULT 0,
+    description varchar(500)  NOT NULL,
+    Pet_pet_id int  NOT NULL,
+    Doctor_doctor_id int  NOT NULL,
+    CONSTRAINT treatment_pk PRIMARY KEY (treatment_id)
+);
+
+-- foreign keys
+-- Reference: Pet_Owner (table: Pet)
+ALTER TABLE Pet ADD CONSTRAINT Pet_Owner
+    FOREIGN KEY (Owner_Owner_id)
+    REFERENCES Owner (Owner_id)  
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE
+;
+
+-- Reference: treatment_Doctor (table: treatment)
+ALTER TABLE treatment ADD CONSTRAINT treatment_Doctor
+    FOREIGN KEY (Doctor_doctor_id)
+    REFERENCES Doctor (doctor_id)  
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE
+;
+
+-- Reference: treatment_Pet (table: treatment)
+ALTER TABLE treatment ADD CONSTRAINT treatment_Pet
+    FOREIGN KEY (Pet_pet_id)
+    REFERENCES Pet (pet_id)  
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE
+;
+
+-- End of file.
+
+
+INSERT INTO Owner(name , phone_number)
+VALUES ('mamad' , '09234567893') ;
+
+
+ALTER TABLE Owner DROP COLUMN treatment_treatment_id ;
+
+
+SELECT * FROM pet ;
+SELECT * FROM Doctor ;
+
+
+INSERT INTO pet(pet_name , species , Owner_Owner_id)
+VALUES ('babak' , 'dog' , 2) ;
+
+
+DELETE FROM pet WHERE pet_id>=3 ; 
+
+
+INSERT INTO Doctor (name , specialty)
+VALUES ('Dr.mikan' , 'feetfixer' ),
+('Dr.arthur', 'eyehealer');
+
+
+INSERT INTO Treatment (Treatment_date , Description , Pet_pet_id , Doctor_doctor_id)
+VALUES(20240102, 'half blinded eye' , 2, 2 )
+;
+
+
+
+--queries
+SELECT * FROM Owner ;
+
+SELECT pet_name FROM pet ;
+
+SELECT dr_name, specialty FROM Doctor ; 
+
+ALTER TABLE Doctor RENAME COLUMN name TO dr_name ;
+
+SELECT * FROM Treatment ; 
+SELECT description , Pet_pet_id , doctor_doctor_id FROM Treatment ;
+
+SELECT * FROM pet WHERE species LIKE 'cat';
+
+SELECT * FROM Owner WHERE phone_number LIKE '09%';
+
+SELECT * FROM pet WHERE species LIKE 'dog' AND pet.pet_name LIKE 'b%' ; 
+
+SELECT * FROM Treatment WHERE treatment_date > 20230101 ; 
+
+SELECT description AS "pet name", Doctor.dr_name FROM Treatment
+JOIN Doctor ON Treatment.Doctor_doctor_id = Doctor.doctor_id ;
+
+SELECT Name AS "Owner name" , count(pet.pet_id) AS "Pet Amount" 
+FROM pet JOIN Owner ON pet.Owner_owner_id = Owner.Owner_id GROUP BY Owner.Name;
+
+SELECT dr_name , count(treatment.treatment_date) AS "Treatment Amount"
+From Doctor JOIN Treatment ON Treatment.Doctor_doctor_id = Doctor.doctor_id GROUP BY Doctor.dr_name;
+
+SELECT * FROM Treatment ORDER BY Treatment_date DESC;
+
+SELECT * FROM Treatment ORDER BY Treatment_date DESC LIMIT 2;

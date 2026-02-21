@@ -1,0 +1,139 @@
+-- tables
+-- Table: album
+CREATE TABLE album (
+    id serial  NOT NULL,
+    title varchar(128)  NOT NULL,
+    year char(4)  NOT NULL,
+    artist_id int  NOT NULL,
+    CONSTRAINT album_pk PRIMARY KEY (id)
+);
+
+-- Table: artist
+CREATE TABLE artist (
+    id serial  NOT NULL,
+    name varchar(128)  NOT NULL,
+    country varchar(128)  NOT NULL,
+    CONSTRAINT artist_pk PRIMARY KEY (id)
+);
+
+-- Table: customer
+CREATE TABLE customer (
+    id serial  NOT NULL,
+    name varchar(128)  NOT NULL,
+    email varchar(256)  NOT NULL,
+    CONSTRAINT customer_pk PRIMARY KEY (id)
+);
+
+-- Table: purchase
+CREATE TABLE purchase (
+    id serial  NOT NULL,
+    date date  NOT NULL,
+    customer_id int  NOT NULL,
+    album_id int  NOT NULL,
+    CONSTRAINT purchase_pk PRIMARY KEY (id)
+);
+
+-- foreign keys
+-- Reference: album_artist (table: album)
+ALTER TABLE album ADD CONSTRAINT album_artist
+    FOREIGN KEY (artist_id)
+    REFERENCES artist (id)  
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE
+;
+
+-- Reference: purchase_album (table: purchase)
+ALTER TABLE purchase ADD CONSTRAINT purchase_album
+    FOREIGN KEY (album_id)
+    REFERENCES album (id)  
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE
+;
+
+-- Reference: purchase_customer (table: purchase)
+ALTER TABLE purchase ADD CONSTRAINT purchase_customer
+    FOREIGN KEY (customer_id)
+    REFERENCES customer (id)  
+    NOT DEFERRABLE 
+    INITIALLY IMMEDIATE
+;
+
+-- End of file.
+
+
+
+INSERT INTO artist(name , country)
+VALUES('white buffalo' , 'USA'),
+('21SAVAGE' , 'USA'),
+('don toliver' , 'USA') ;
+
+SELECT * FROM artist ;
+
+INSERT INTO album(title , year , artist_id)
+VALUES
+('WHAT HAPPEND TO THE STREETS' , 2024 ,2);
+
+SELECT * FROM album;
+
+
+INSERT INTO customer (name , email)
+VALUES('Arthur' , 'arthur121@gmail.com'),
+('john' , 'johnmars154@gmail.com') ;
+
+SELECT * FROM customer;
+
+INSERT INTO purchase (date , customer_id , album_id)
+VALUES ('2024-01-03',2,1);
+
+SELECT * FROM purchase ;
+
+
+--queries
+
+select * from purchase;
+
+select year, count(*)
+from album
+group by year 
+order by count desc;
+
+select name, count(*)
+from album join artist on album.artist_id=artist.id
+group by name     
+order by count;
+
+select name , count(*)
+from purchase
+join customer on purchase.customer_id=customer.id
+group by name;
+   
+select * from album order by year Desc;
+
+select * from customer order by name;
+
+select * from purchase order by date desc;
+
+select * from album where title like '%Love%' and year > '2020';
+
+select name, count(*)
+from purchase
+join customer on purchase.customer_id=purchase.id
+group by customer.name having name like 'Maryam' and  count(*) > 1;
+
+select year, count(*)
+from album
+where year > '2015'
+group by year;
+    
+select *
+from artist
+left join album on artist.id=album.artist_id
+where album.id is null;
+
+select distinct country from artist;
+
+select customer.name as customer, count(customer_id) as purchase
+from purchase
+join customer on purchase.customer_id=customer.id
+group by customer.name
+order by purchase desc;
