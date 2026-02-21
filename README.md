@@ -64,7 +64,7 @@ It represents my growth from beginner level to being a full-stack .
 
 • Cloud Deployment and Hosting Applications.
 
-📁 Folder: /linux
+📁 Folder: /Frontend
 ---
 🔹 Stage 4 — Frontend Development
 
@@ -76,17 +76,10 @@ It represents my growth from beginner level to being a full-stack .
 
 • Frontend Frameworks: Brief Introduction to Reac
 
-📁 Folder: /frontend
+
+📁Floder: /Backend
 ---
-Technologies:
-
-HTML5
-
-CSS3
-
-JavaScript (ES6)
----
-🔹 Stage 5 — Backend Development
+🔹 Stage 5 — Backend Development(django)
 
 -Server-side concepts
 
@@ -106,25 +99,10 @@ JavaScript (ES6)
 
 • Integrating Third-party Libraries with DRF
 
-📁 Folder: /django-projects
----
-🛠 Technologies Used
 
-Python
 
-Linux
-
-Git & GitHub
-
-HTML
-
-CSS
-
-JavaScript
-
-Django
----
 📦 Project Structure Example
+---
 ```
 maktab-137/
 │
@@ -135,7 +113,9 @@ maktab-137/
 ├── django-projects/
 └── README.md
 ```
+
 🎯 Goals of This Repository
+---
 
 Document my learning journey
 
