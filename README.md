@@ -1,7 +1,8 @@
-📚 Maktab 137
+#📚 Maktab 137
 
 A complete learning journey from 0 to 100 in Programming
 Python • Linux • Frontend • Backend • Django
+---
 
 🚀 About This Repository
 
@@ -20,7 +21,7 @@ This repository includes:
 🟢 Django web applications
 
 It represents my growth from beginner level to building full-stack applications.
-
+---
 🧠 Learning Path (0 → 100)
 🔹 Stage 1 — Programming Fundamentals
 
@@ -35,7 +36,7 @@ Object-Oriented Programming (OOP)
 File handling
 
 📁 Folder: /python-basics
-
+---
 🔹 Stage 2 — Linux & CLI
 
 File system navigation
@@ -47,7 +48,7 @@ Git basics
 Server concepts
 
 📁 Folder: /linux
-
+---
 🔹 Stage 3 — Frontend Development
 
 HTML structure
@@ -61,7 +62,7 @@ JavaScript fundamentals
 DOM manipulation
 
 📁 Folder: /frontend
-
+---
 Technologies:
 
 HTML5
@@ -69,7 +70,7 @@ HTML5
 CSS3
 
 JavaScript (ES6)
-
+---
 🔹 Stage 4 — Backend Development
 
 Server-side concepts
@@ -81,7 +82,7 @@ MVC architecture
 Authentication basics
 
 📁 Folder: /backend
-
+---
 🔹 Stage 5 — Django Projects
 
 Django structure
@@ -97,7 +98,7 @@ Admin panel
 Deployment basics
 
 📁 Folder: /django-projects
-
+---
 🛠 Technologies Used
 
 Python
@@ -113,8 +114,9 @@ CSS
 JavaScript
 
 Django
-
+---
 📦 Project Structure Example
+```
 maktab-137/
 │
 ├── python-basics/
@@ -123,6 +125,7 @@ maktab-137/
 ├── backend/
 ├── django-projects/
 └── README.md
+```
 🎯 Goals of This Repository
 
 Document my learning journey
@@ -134,7 +137,7 @@ Build real-world projects
 Improve problem-solving skills
 
 Move toward professional full-stack development
-
+---
 📈 Future Improvements
 
 Add more advanced Django projects
@@ -146,7 +149,7 @@ Deploy projects to cloud
 Improve frontend UI/UX
 
 Write better documentation for each project
-
+---
 👨‍💻 Author
 
 Parsa Partovi
