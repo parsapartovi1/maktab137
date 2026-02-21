@@ -53,11 +53,11 @@ db.sqlite3-journal
 # Windows
 Thumbs.db
 ehthumbs.db
+.fuse_hidden*
 Desktop.ini
 
 # Linux
 *~
-.fuse_hidden*
 .directory
 .Trash-*
 .nfs*
