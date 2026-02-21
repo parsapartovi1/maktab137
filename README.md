@@ -106,11 +106,11 @@ It represents my growth from beginner level to become a full-stack .
 ```
 maktab-137/
 │
-├── python-basics/
+├── python/
+├── database/
 ├── linux/
 ├── frontend/
 ├── backend/
-├── django-projects/
 └── README.md
 ```
 
