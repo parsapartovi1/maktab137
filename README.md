@@ -146,4 +146,4 @@ Parsa Partovi
 
 Aspiring Full Stack Developer
 
-Focused on Architecture & Software Development 🚀
+Focused on Architecture & Backend Development 🚀
