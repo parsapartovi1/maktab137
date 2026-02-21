@@ -21,7 +21,7 @@ This repository includes:
 ⚙️ Backend concepts
       >🟢 Django web applications
 
-It represents my growth from beginner level to building full-stack applications.
+It represents my growth from beginner level to being a full-stack .
 ---
 🧠 Learning Path (0 → 100)
 🔹 Stage 1 — Programming Fundamentals
