@@ -10,56 +10,71 @@ Maktab 137 is my personal learning archive containing all the projects I built w
 
 This repository includes:
 
-🐍 Python fundamentals & projects
+🐍 Python 
 
-🐧 Linux practice & command-line exercises
+📊DataBase
+
+🐧 Linux, Git and develops 
 
 🌐 Frontend development (HTML, CSS, JavaScript)
 
 ⚙️ Backend concepts
-
-🟢 Django web applications
+      >🟢 Django web applications
 
 It represents my growth from beginner level to building full-stack applications.
 ---
 🧠 Learning Path (0 → 100)
 🔹 Stage 1 — Programming Fundamentals
 
-Python basics
+• Variables, Data Types, and Type Casting.
 
-Variables, loops, conditions
+• Control Structures: Conditional statements, loops, and list manipulation.
 
-Functions
+• Functions: Definition, Decorators, and Functional Programming.
 
-Object-Oriented Programming (OOP)
+• Dictionaries, Tuples, and Sets.
 
-File handling
+• File Handling: Operations, Exception Handling, and Encoding.
+
+• OOP: Classes, Inheritance, Encapsulation, and Magic Methods.
 
 📁 Folder: /python-basics
 ---
-🔹 Stage 2 — Linux & CLI
+🔹 Stage 2 — Data Base
 
-File system navigation
+• Database Design, Tables, Schemas and ERD.
 
-Bash commands
+• SQL: Queries, CRUD Operations, Joins, and Aggregation Pipelines.
 
-Git basics
+• Indexing and Query Optimization Techniques.
 
-Server concepts
+• NoSQL: MongoDB Collections
+
+
+---
+🔹 Stage 3 — Linux , Git and devOps
+
+• Linux Basics: Commands and Bash Scripting.
+
+• Git: Core Commands and Collaborative Workflows.
+
+• Nginx Web Server and Reverse Proxy.
+
+• Docker Basics and Dockerfiles.
+
+• Cloud Deployment and Hosting Applications.
 
 📁 Folder: /linux
 ---
-🔹 Stage 3 — Frontend Development
+🔹 Stage 4 — Frontend Development
 
-HTML structure
+• HTML5: Structure of Web Pages
 
-CSS styling & layouts
+• CSS3: Styling, Flexbox, Grid Layouts.
 
-Responsive design
+• JavaScript: DOM Manipulation and Event Handling.
 
-JavaScript fundamentals
-
-DOM manipulation
+• Frontend Frameworks: Brief Introduction to Reac
 
 📁 Folder: /frontend
 ---
@@ -71,31 +86,25 @@ CSS3
 
 JavaScript (ES6)
 ---
-🔹 Stage 4 — Backend Development
+🔹 Stage 5 — Backend Development
 
-Server-side concepts
+-Server-side concepts
 
-HTTP & REST
+-HTTP & REST
 
-MVC architecture
+-MVC architecture
 
-Authentication basics
+-Authentication basics
 
-📁 Folder: /backend
----
-🔹 Stage 5 — Django Projects
+• MVT Architecture, Models, Views and Templates.
 
-Django structure
+• Django ORM
 
-Models, Views, Templates
+• REST Framework and Serializing Data.
 
-Authentication system
+• Authentication and Security
 
-CRUD operations
-
-Admin panel
-
-Deployment basics
+• Integrating Third-party Libraries with DRF
 
 📁 Folder: /django-projects
 ---
@@ -153,5 +162,7 @@ Write better documentation for each project
 👨‍💻 Author
 
 Parsa Partovi
+
 Aspiring Full Stack Developer
+
 Focused on Architecture & Software Development 🚀
